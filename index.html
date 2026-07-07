@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhawesh Sinha — Data Science &amp; MLOps Portfolio</title>
+<meta name="description" content="Bhawesh Sinha — Data Science undergraduate building MLOps pipelines, cloud-deployed AI applications and predictive analytics systems.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Toolbar -->
+<header class="toolbar" role="banner">
+  <div class="toolbar__inner">
+    <div class="toolbar__file">
+      <span class="dot dot--red"></span><span class="dot dot--amber"></span><span class="dot dot--green"></span>
+      <span class="filename">bhawesh_sinha_portfolio.ipynb</span>
+    </div>
+    <nav class="toolbar__actions" aria-label="Primary">
+      <button id="runAllBtn" class="btn-toolbar" type="button">
+        <span class="run-icon">&#9654;</span> Run All
+      </button>
+      <a class="btn-toolbar" href="#contact">Contact</a>
+      <a class="btn-toolbar btn-toolbar--accent" href="assets/Bhawesh_Sinha_Resume.pdf" download>Download Résumé</a>
+    </nav>
+  </div>
+</header>
+
+<main id="notebook">
+
+  <!-- CELL 0 — HERO / MARKDOWN CELL -->
+  <section class="cell cell--markdown" id="hero" data-cell>
+    <div class="cell__gutter">
+      <span class="exec-count" data-exec>In&nbsp;[ ]:</span>
+    </div>
+    <div class="cell__body">
+      <p class="eyebrow">markdown</p>
+      <div class="hero">
+        <div class="hero__photo-wrap">
+          <img class="hero__photo" src="assets/profile.jpg" alt="Bhawesh Sinha" id="profilePhoto">
+          <!-- <span class="hero__photo-caption">assets/profile.jpg</span> -->
+        </div>
+        <div class="hero__text">
+          <h1 class="hero__name">Bhawesh Sinha</h1>
+          <p class="hero__title">Data Science Undergraduate <span class="sep">·</span> MLOps &amp; GenAI Engineer</p>
+          <p class="hero__location">📍 Kolkata, India</p>
+          <p class="hero__summary">Data Science undergraduate with experience building production-ready MLOps pipelines, cloud-deployed AI applications, and predictive analytics systems on AWS. Published IEEE research in medical AI and developed scalable machine learning solutions from data ingestion to deployment.</p>
+
+          <ul class="social-row" aria-label="Social links">
+            <li><a href="https://github.com/BhaweshSinha" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/bhawesh-sinha-898019194/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.kaggle.com/bhaweshsinha07" target="_blank" rel="noopener">Kaggle</a></li>
+            <li><a href="https://leetcode.com/u/bhaweshsinha03/" target="_blank" rel="noopener">LeetCode</a></li>
+            <li><a href="mailto:bhaweshsinha100@gmail.com">Email</a></li>
+          </ul>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="assets/Bhawesh_Sinha_Resume.pdf" download>⭳ Download Résumé</a>
+            <a class="btn btn--ghost" href="#projects">View Projects</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CELL 1 — SKILLS (CODE CELL) -->
+  <section class="cell cell--code" id="skills" data-cell>
+    <div class="cell__gutter">
+      <span class="exec-count" data-exec>In&nbsp;[ ]:</span>
+    </div>
+    <div class="cell__body">
+      <p class="eyebrow">code</p>
+      <pre class="code-block"><code><span class="tok-key">skills</span> = {
+    <span class="tok-str">"programming_and_analytics"</span>: [<span class="tok-str">"Python"</span>, <span class="tok-str">"SQL"</span>, <span class="tok-str">"Pandas"</span>, <span class="tok-str">"NumPy"</span>, <span class="tok-str">"Matplotlib"</span>, <span class="tok-str">"Power BI"</span>],
+    <span class="tok-str">"machine_learning_and_ai"</span>: [<span class="tok-str">"Scikit-learn"</span>, <span class="tok-str">"TensorFlow"</span>, <span class="tok-str">"XGBoost"</span>, <span class="tok-str">"CNNs"</span>, <span class="tok-str">"NLP"</span>, <span class="tok-str">"RAG"</span>],
+    <span class="tok-str">"cloud_and_data_engineering"</span>: [<span class="tok-str">"AWS S3"</span>, <span class="tok-str">"EC2"</span>, <span class="tok-str">"Lambda"</span>, <span class="tok-str">"SageMaker"</span>, <span class="tok-str">"RDS"</span>, <span class="tok-str">"Athena"</span>, <span class="tok-str">"Boto3"</span>],
+    <span class="tok-str">"mlops_and_genai"</span>: [<span class="tok-str">"Git"</span>, <span class="tok-str">"Docker"</span>, <span class="tok-str">"CI/CD"</span>, <span class="tok-str">"MLflow"</span>, <span class="tok-str">"DVC"</span>, <span class="tok-str">"LangChain"</span>, <span class="tok-str">"Hugging Face"</span>, <span class="tok-str">"LlamaIndex"</span>],
+}
+<span class="tok-key">print</span>(<span class="tok-key">summarize</span>(skills))</code></pre>
+      <div class="output-block">
+        <span class="output-label">Out&nbsp;[ ]:</span>
+        <p>Kaggle Notebook Expert — <strong>Top 3% globally</strong> for Data Analysis &amp; Visualization</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CELL 2 — RESEARCH & PUBLICATIONS -->
+  <section class="cell cell--markdown" id="research" data-cell>
+    <div class="cell__gutter">
+      <span class="exec-count" data-exec>In&nbsp;[ ]:</span>
+    </div>
+    <div class="cell__body">
+      <p class="eyebrow">markdown</p>
+      <h2 class="section-title">Research &amp; Publications</h2>
+      <article class="card">
+        <div class="card__head">
+          <h3>Deep Learning for Alzheimer's Detection — CNN Architectures on the ADNI Dataset</h3>
+          <span class="card__dates">Jan 2024 – Dec 2024</span>
+        </div>
+        <p class="card__meta">IEEE Conference Paper <span class="sep">·</span> Deep Learning &amp; Neuroscience</p>
+        <ul class="card__list">
+          <li>Developed a CNN architecture for Alzheimer's detection on the <strong>ADNI dataset</strong>, achieving <strong>&gt;90% precision and recall</strong>.</li>
+          <li>Fine-tuned <strong>6 pre-trained CNN models</strong>: VGG16, DenseNet121, Xception, ResNet152V2, InceptionResNetV2, NASNetLarge.</li>
+        </ul>
+        <a class="card__link" href="https://ieeexplore.ieee.org/document/10896128" target="_blank" rel="noopener">Read on IEEE Xplore →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- CELL 3 — TECHNICAL PROJECTS -->
+  <section class="cell cell--markdown" id="projects" data-cell>
+    <div class="cell__gutter">
+      <span class="exec-count" data-exec>In&nbsp;[ ]:</span>
+    </div>
+    <div class="cell__body">
+      <p class="eyebrow">markdown</p>
+      <h2 class="section-title">Technical Projects</h2>
+
+      <article class="card">
+        <div class="card__head">
+          <h3>SAP SmartSupply GenAI Automation</h3>
+          <span class="card__dates">Jun 2026 – Present</span>
+        </div>
+        <p class="card__meta">FastAPI <span class="sep">·</span> AWS <span class="sep">·</span> RAG <span class="sep">·</span> GenAI <span class="sep">·</span> n8n</p>
+        <ul class="card__list">
+          <li>Developing a supply chain intelligence platform integrating GenAI, workflow automation, and predictive analytics.</li>
+          <li>Building scalable workflows using FastAPI, PostgreSQL, AWS, Docker, MLflow, RAG, DVC, and CI/CD.</li>
+        </ul>
+        <a class="card__link" href="https://github.com/BhaweshSinha/SAP-Smart-Supply-GenAI-Automation" target="_blank" rel="noopener">View repository →</a>
+      </article>
+
+      <article class="card">
+        <div class="card__head">
+          <h3>Automated Financial MLOps Platform</h3>
+          <span class="card__dates">Jun 2025 – Dec 2025</span>
+        </div>
+        <p class="card__meta">Python <span class="sep">·</span> FastAPI <span class="sep">·</span> AWS <span class="sep">·</span> ML</p>
+        <ul class="card__list">
+          <li>Built an end-to-end Financial MLOps pipeline (74K × 7 data), achieving <strong>0.85 ROC-AUC</strong> with XGBoost.</li>
+          <li>Deployed a production-ready FastAPI inference service on AWS EC2 using Gunicorn + Nginx and REST APIs.</li>
+        </ul>
+        <a class="card__link" href="https://github.com/BhaweshSinha/Automated-Financial-MLOps-Platform/tree/main" target="_blank" rel="noopener">View repository →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- CELL 4 — EXPERIENCE (DATAFRAME STYLE) -->
+  <section class="cell cell--code" id="experience" data-cell>
+    <div class="cell__gutter">
+      <span class="exec-count" data-exec>In&nbsp;[ ]:</span>
+    </div>
+    <div class="cell__body">
+      <p class="eyebrow">code</p>
+      <pre class="code-block"><code><span class="tok-key">experience</span>.head()</code></pre>
+
+      <div class="output-block output-block--table">
+        <span class="output-label">Out&nbsp;[ ]:</span>
+        <div class="dataframe-wrap">
+          <table class="dataframe">
+            <thead>
+              <tr><th></th><th>role</th><th>company</th><th>duration</th><th>tools</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td>Finance Research Analyst Intern</td>
+                <td>Edify Equity (Remote)</td>
+                <td>Jun 2026 – Present</td>
+                <td>Excel, Financial Research</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Machine Learning Intern</td>
+                <td>Afame Technologies Pvt. Ltd. (Remote)</td>
+                <td>Jun 2024 – Jul 2024</td>
+                <td>Python, Pandas, Scikit-learn</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Data Science Intern</td>
+                <td>Unified Mentor Pvt. Ltd. (Remote)</td>
+                <td>Feb 2024 – May 2024</td>
+                <td>Excel, Pandas, Matplotlib</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="exp-details">
+          <details open>
+            <summary>row 0 — Finance Research Analyst Intern</summary>
+            <ul>
+              <li>Analyzed financial data and supported buy/hold/sell research recommendations.</li>
+              <li>Tracked markets, portfolios, and economic indicators for investment analysis.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>row 1 — Machine Learning Intern</summary>
+            <ul>
+              <li>Built a customer churn prediction pipeline on 10,000 records.</li>
+              <li>Achieved 86% accuracy using Random Forest and Gradient Boosting.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>row 2 — Data Science Intern</summary>
+            <ul>
+              <li>Performed EDA on retail, healthcare, and financial datasets.</li>
+              <li>Built analytics dashboards, reducing manual effort by 50%.</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CELL 5 — EDUCATION & AWARDS -->
+  <section class="cell cell--markdown" id="education" data-cell>
+    <div class="cell__gutter">
+      <span class="exec-count" data-exec>In&nbsp;[ ]:</span>
+    </div>
+    <div class="cell__body">
+      <p class="eyebrow">markdown</p>
+      <h2 class="section-title">Education &amp; Awards</h2>
+
+      <div class="two-col">
+        <article class="card card--compact">
+          <h3>B.Tech, Data Science</h3>
+          <p class="card__meta">Swami Vivekananda University, Kolkata, India</p>
+          <p class="card__meta">Graduation Year: 2027 <span class="sep">·</span> CGPA: 8.2 / 10</p>
+        </article>
+
+        <article class="card card--compact">
+          <h3>Awards &amp; Certifications</h3>
+          <ul class="card__list card__list--tight">
+            <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/ZU7TNUGSLQTW" target="_blank" rel="noopener">Google Data Analytics Certificate</a> — Coursera (2026)</li>
+            <li>Japanese Language Studies — JLPT N4 Preparation</li>
+            <li>Advanced Diploma in Computer Application — Anaon Computers (2021–2022)</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CELL 6 — CONTACT -->
+  <section class="cell cell--code" id="contact" data-cell>
+    <div class="cell__gutter">
+      <span class="exec-count" data-exec>In&nbsp;[ ]:</span>
+    </div>
+    <div class="cell__body">
+      <p class="eyebrow">code</p>
+      <pre class="code-block"><code><span class="tok-key">from</span> bhawesh <span class="tok-key">import</span> contact
+
+contact.<span class="tok-key">reach_out</span>(
+    email=<span class="tok-str">"bhaweshsinha100@gmail.com"</span>,
+    phone=<span class="tok-str">"+91-6200850882"</span>,
+    location=<span class="tok-str">"Kolkata, India"</span>,
+)</code></pre>
+      <div class="output-block">
+        <span class="output-label">Out&nbsp;[ ]:</span>
+        <p>Open to internships, research collaborations, and MLOps/GenAI roles.</p>
+        <ul class="social-row social-row--contact">
+          <li><a href="mailto:bhaweshsinha100@gmail.com">✉ bhaweshsinha100@gmail.com</a></li>
+          <li><a href="https://github.com/BhaweshSinha" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/bhawesh-sinha-898019194/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.kaggle.com/bhaweshsinha07" target="_blank" rel="noopener">Kaggle</a></li>
+          <li><a href="https://leetcode.com/u/bhaweshsinha03/" target="_blank" rel="noopener">LeetCode</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="statusbar" role="contentinfo">
+  <span>Python 3 (ipykernel)</span>
+  <span class="statusbar__sep">|</span>
+  <span id="kernelStatus">Kernel: idle</span>
+  <span class="statusbar__sep">|</span>
+  <span>© <span id="year"></span> Bhawesh Sinha</span>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
