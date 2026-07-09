@@ -2,7 +2,7 @@
 
 A single-page portfolio site styled as an executable data-science notebook — a nod to being a Kaggle Notebook Expert. Sections are laid out as notebook cells (`In [ ]:` / `Out [ ]:`), with a code-cell skills table, a pandas-style experience "dataframe," and a Run All button that replays the cell-execution animation.
 
-**Live site (after deployment):** `https://<your-github-username>.github.io/<repo-name>/`
+**Live site (after deployment):** `https://<your-github-username>.github.io/<repo-name>/` 
 
 ## Tech stack
 
