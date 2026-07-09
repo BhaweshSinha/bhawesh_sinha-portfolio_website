@@ -4,7 +4,7 @@ A single-page portfolio site styled as an executable data-science notebook — a
 
 **Live site (after deployment):** `https://<your-github-username>.github.io/<repo-name>/`
 
-## Tech stack
+## Tech stack 
 
 Plain HTML, CSS, and vanilla JavaScript — no build step, no framework, no dependencies to install. The only external resource is a Google Fonts stylesheet (Space Grotesk, Inter, JetBrains Mono).
 
